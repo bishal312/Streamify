@@ -21,7 +21,7 @@ const NotificationsPage = () => {
         queryClient.invalidateQueries({ queryKey: ["friends"] });
     },
   });
-  const incomingRequests = friendRequests?.incomingReq || [];
+  const incomingRequests = friendRequests?.incomingReqs || [];
   const acceptedRequests = friendRequests?.acceptedReqs || [];
   return (
     <div className="p4 sm:p-6 lg:p-8">
